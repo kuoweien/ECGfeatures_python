@@ -36,9 +36,9 @@ def openRawFile(filename):
 
 #%%
 
-filename_raw = '1-220808b.241'
+filename_raw = '221006a.241'
 # read ecg data from rawfile
-ecg_raw, fs, update_datetime = openRawFile('Data/1-220808b.241')
+ecg_raw, fs, update_datetime = openRawFile('Data/{}'.format(filename_raw))
 fs = int(fs)
 
 # Signal quality indices threshold in two seconds epoch (Patch=0.419 LTA3=2.210)

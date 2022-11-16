@@ -106,7 +106,9 @@ def openRawFile(filename):
     return ecg_rawdata,ecg_fq,update_datetime
 
 #%%
-ecg_raw, fs, update_datetime = openRawFile('Data/1-220808b.241')
+filename_raw = '221006a.241'
+# read ecg data from rawfile
+ecg_raw, fs, update_datetime = openRawFile('Data/{}'.format(filename_raw))
 fs = int(fs)
 
 # Read data parameters
